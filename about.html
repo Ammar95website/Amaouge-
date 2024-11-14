@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Amouage Perfume</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> <!-- Link to Google Font -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: silver; /* Silver background */
+            margin: 0;
+        }
+
+        /* Style the header */
+        header {
+            background-color: AntiqueWhite; /* Change to AntiqueWhite */
+            padding: 40px;
+            display: flex; /* Use Flexbox for layout */
+            align-items: center; /* Center items vertically */
+            color: black; /* Adjusted text color for better contrast */
+        }
+
+        header img {
+            width: 150px; /* Logo size */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 300px; /* Space between logo and text */
+        }
+
+        header h2 {
+            font-family: 'Lobster', cursive; /* Change font style */
+            font-size: 50px;
+            margin: 0; /* Remove default margin */
+        }
+
+        /* Create two columns/boxes that float next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 8px 0;
+            display: block;
+        }
+
+        /* Main content area */
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: AntiqueWhite; /* Change to AntiqueWhite */
+            padding: 10px;
+            text-align: center;
+            color: black; /* Adjusted text color for better contrast */
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+		div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+		
+
+            }
+
+.blink {
+                animation: blinker 1.5s linear infinite;
+                color: white;
+                font-family: sans-serif;
+            }
+
+            @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }			
+		
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Amouage Logo">
+    <h2>Amouage Perfume</h2>
+</header>
+<marquee class="blink">Experience the art of perfumery with Amouage – where luxury, craftsmanship, and timeless elegance meet</marquee>
+<section>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <article>
+        <h1>About Us </h1>
+        <p>Amouage is a luxury perfume brand founded in Oman in 1983. Inspired by Middle Eastern heritage, we create unique fragrances using rare ingredients from around the world. Each scent is crafted with care to be rich, elegant, and unforgettable.</p>
+        <p>At Amouage, we’re passionate about quality and the art of perfume-making, turning each fragrance into an experience.</p>
+		<p>
+        <a href="https://amouage.com/en-om/pages/our-story" target="_blank">Read More!</a> </p>
+        <div class="gallery">
+  <a target="_blank" href="4.jpg">
+    <img src="4.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="1.jpeg">
+    <img src="1.jpeg" alt="Amouage" width="600" height="400">
+  </a>
+
+</div>
+
+
+    </article>
+</section>
+
+<footer>
+    <p>&copy; 2024 Amouage Perfume. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
